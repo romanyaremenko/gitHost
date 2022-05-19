@@ -56,3 +56,51 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+$( ".telegram" ).mouseover(function() {
+    $( ".step1" ).hide();
+    $( ".step2" ).show().css("display", "block");
+    console.log("1")
+});
+
+$( ".telegram" ).mouseout(function() {
+    $( ".step2" ).hide();
+    $( ".step1" ).show();
+    console.log("2")
+});
+
+$( ".file1" ).mouseover(function() {
+    $( ".step3" ).hide();
+    $( ".step4" ).show().css("display", "block");
+    console.log("1")
+});
+
+$( ".file1" ).mouseout(function() {
+    $( ".step4" ).hide();
+    $( ".step3" ).show();
+    console.log("2")
+});
+
+$( ".file2" ).mouseover(function() {
+    $( ".step5" ).hide();
+    $( ".step6" ).show().css("display", "block");
+    console.log("1")
+});
+
+$( ".file2" ).mouseout(function() {
+    $( ".step6" ).hide();
+    $( ".step5  " ).show();
+    console.log("2")
+});
+
+$( ".DxSale" ).mouseover(function() {
+    $( ".step7" ).hide();
+    $( ".step8" ).show().css("display", "block");
+    console.log("1")
+});
+
+$( ".DxSale" ).mouseout(function() {
+    $( ".step8" ).hide();
+    $( ".step7" ).show();
+    console.log("2")
+});

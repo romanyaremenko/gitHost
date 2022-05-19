@@ -379,7 +379,6 @@ a {
 }
 .btn:hover {
   background: linear-gradient(270deg, rgba(41, 193, 214, 0) 0%, rgba(41, 193, 214, 0.299) 56.43%, rgba(52, 133, 119, 0.65) 74.85%, rgba(133, 255, 234, 0.65) 100%);
-  transition: all 0.5s;
 }
 
 body {
@@ -852,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 35%;
   z-index: 1;
   animation: intro 6s ease-out;
-  color: rgb(75, 213, 238);
+  color: #4bd5ee;
   font-weight: 400;
   font-size: 300%;
   opacity: 0;
@@ -2182,6 +2181,12 @@ h1, h2, h3, h4, h5, h6 {
 .contract__column:nth-child(4) {
   display: block;
   width: 100%;
+  padding-left: 60px;
+}
+@media (max-width: 1366px) {
+  .contract__column:nth-child(4) {
+    padding-left: 0;
+  }
 }
 .contract__column-form {
   width: 100%;
@@ -2505,6 +2510,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 60px;
+  min-height: 800px;
+  height: 100vh;
+}
+@media (max-width: 1024px) {
+  .soon {
+    height: auto;
+  }
 }
 .soon__top {
   background-image: url(../img/icons/soon/01.svg);
@@ -2550,7 +2562,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .soon__bottom-item:first-child {
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 @media (max-width: 1024px) {
   .soon__bottom-item:first-child {
@@ -2568,7 +2580,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .soon__bottom-item:nth-child(2) {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 @media (max-width: 1024px) {
   .soon__bottom-item:nth-child(2) {
@@ -2592,8 +2604,8 @@ h1, h2, h3, h4, h5, h6 {
 .soon__bottom-logo img {
   display: block;
   margin: 0 auto;
-  width: 230px;
-  height: 230px;
+  width: 174px;
+  height: 190px;
   margin-bottom: -5px;
 }
 @media (max-width: 1024px) {
@@ -2611,7 +2623,7 @@ h1, h2, h3, h4, h5, h6 {
 .soon__bottom-logo span {
   display: block;
   font-family: "feijoa";
-  font-size: 22px;
+  font-size: 21px;
   line-height: 129%;
   /* identical to box height, or 18px */
   text-align: center;
@@ -2700,6 +2712,24 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
   }
 }
+.soon__bottom .icons .telegram img {
+  width: 110px;
+}
+.soon__bottom .icons .file img {
+  width: 92px;
+}
+.soon__bottom .icons .file .step4 {
+  display: none;
+}
+.soon__bottom .icons .file .step6 {
+  display: none;
+}
+.soon__bottom .icons .DxSale .step8 {
+  display: none;
+}
+.soon__bottom .icons .DxSale img {
+  width: 115px;
+}
 .soon__bottom .icons__item {
   flex: 0 1 200px;
   flex-direction: column;
@@ -2723,6 +2753,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 .soon__bottom .icons__item-bg {
   height: 132px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soon__bottom .icons__item-bg .step1 {
+  display: block;
+}
+.soon__bottom .icons__item-bg .position1 {
+  width: 100%;
+  max-width: 145px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.soon__bottom .icons__item-bg .step2 {
+  display: none;
 }
 .soon__bottom .icons__item-bg::after {
   content: "";
@@ -2738,17 +2787,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 .soon__bottom .icons__item-bg_1 {
-  background-image: url(../img/soon/Telegram__pass.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   transition: all 0.5s;
-}
-.soon__bottom .icons__item-bg_1:hover {
-  background-image: url(../img/soon/Telegram__active.svg);
 }
 .soon__bottom .icons__item-bg_2 {
   background-image: url(../img/icons/soon/03.svg);
@@ -2831,7 +2873,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   max-width: 870px;
-  margin: 76px auto 0 auto;
+  margin: 55px auto 0 auto;
 }
 @media (max-width: 1024px) {
   .soon .item {
@@ -2956,16 +2998,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .tokenomics {
   background: #0d0d0d;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 16.69%, rgba(0, 0, 0, 0) 83.91%, #000000 100%), url(../img/secret/Image.png);
+  padding: 100px 0;
 }
 .tokenomics .container {
   max-width: none;
   padding: 0;
 }
+.tokenomics__text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.tokenomics__title {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  background: radial-gradient(100% 1111.91% at 100% 50%, #B2F6FF 0%, rgba(38, 166, 141, 0) 50%, #B2F6FF 100%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .tokenomics__title {
+    font-size: 64px;
+  }
+}
+.tokenomics__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .tokenomics__description {
+    text-align: left;
+  }
+}
 .tokenomics__content {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 850px;
+  min-height: 850px;
+  overflow: visible;
 }
 .tokenomics-absolute {
   position: absolute;
