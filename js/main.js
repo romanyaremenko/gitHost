@@ -286,18 +286,18 @@ $(".popup__btn").click(function (){
 })
 
 
-// var header = $('.header__top'),
-//     scrollPrev = 0;
+var header = $('.header__top'),
+  scrollPrev = 0;
+
+$(window).scroll(function() {
+var scrolled = $(window).scrollTop();
 //
-// $(window).scroll(function() {
-//   var scrolled = $(window).scrollTop();
-//
-//   if ( scrolled > 200 && scrolled > scrollPrev ) {
-//     header.addClass('out');
-//     menu.classList.remove('active');
-//     menuButton.classList.remove('active')
-//   } else {
-//     header.removeClass('out');
-//   }
-//   scrollPrev = scrolled;
-// });
+if ( scrolled > 200 && scrolled > scrollPrev ) {
+header.addClass('out');
+menu.classList.remove('active');
+menuButton.classList.remove('active')
+} else {
+header.removeClass('out');
+}
+scrollPrev = scrolled;
+});
