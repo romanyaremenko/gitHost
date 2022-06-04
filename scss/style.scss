@@ -267,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  min-height: 900px; 
   @media (max-width: 1500px) {
     background-position: center bottom -42px;
     background-size: cover;
@@ -283,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 100% -8%, center bottom;
     background-size: contain, cover;
     background-repeat: no-repeat, no-repeat;
+    min-height: 0;
   }
   @media (max-width: 580px) {
     background-position: 100% -8%, 50% 50px;
@@ -672,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
       .icon__svg {
         transition: all 0.3s;
         cursor: pointer;
+        margin-bottom: 10px;
         path:nth-child(2){ 
           &:hover {
             fill: rgb(0, 0, 0, 0.5);
@@ -1761,7 +1764,7 @@ text-align: center;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  //background: #000;
   z-index: 1;
   transition: opacity var(--card-transition-duration) var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
@@ -2882,6 +2885,7 @@ text-align: center;
     &__img {
       height: 803px;
       width: 800px;
+      object-fit: contain;
       @media (max-width: 700px) {
         width: 560px;
         height: 560px;
@@ -2894,9 +2898,10 @@ text-align: center;
   .step2 {
     display: none;
     .step__img {
-      height: 803px;
+      height: 785px;
+      object-fit: cover;
       @media (max-width: 700px) {
-        height: 560px;
+        height: 545px;
       }
     }
   }

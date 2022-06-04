@@ -403,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  min-height: 900px;
 }
 @media (max-width: 1500px) {
   .header {
@@ -421,6 +422,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 100% -8%, center bottom;
     background-size: contain, cover;
     background-repeat: no-repeat, no-repeat;
+    min-height: 0;
   }
 }
 @media (max-width: 580px) {
@@ -837,6 +839,7 @@ h1, h2, h3, h4, h5, h6 {
 .side-bar-bottom__item .icon__svg {
   transition: all 0.3s;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .side-bar-bottom__item .icon__svg path:nth-child(2):hover {
   fill: rgba(0, 0, 0, 0.5);
@@ -2015,7 +2018,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #000;
   z-index: 1;
   transition: opacity var(--card-transition-duration) var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
@@ -3234,6 +3236,7 @@ h1, h2, h3, h4, h5, h6 {
 .tokenomics .step__img {
   height: 803px;
   width: 800px;
+  object-fit: contain;
 }
 @media (max-width: 700px) {
   .tokenomics .step__img {
@@ -3245,11 +3248,12 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .tokenomics .step2 .step__img {
-  height: 803px;
+  height: 785px;
+  object-fit: cover;
 }
 @media (max-width: 700px) {
   .tokenomics .step2 .step__img {
-    height: 560px;
+    height: 545px;
   }
 }
 .tokenomics .step3 {
