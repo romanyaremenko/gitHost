@@ -7,10 +7,10 @@ var x = setInterval(function() {
 
     // Get todays date and time
     var now = new Date().getTime();
-    
+
     // Find the distance between now an the count down date
     var distance = countDownDate - now;
-    
+
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -37,7 +37,7 @@ var x = setInterval(function() {
     || (days === 7) || (days === 8) || (days === 9)) {
         days = "0" + days;
     };
-    
+
     // Output the result in an element with id="demo"
     document.getElementById("demo").innerHTML =  `<div class="item__time">
     <div class="item__num">${days}</div><div class="item__text">DAYS</div></div>` +
@@ -47,10 +47,10 @@ var x = setInterval(function() {
     <div class="item__num">${minutes}</div><div class="item__text">MINUTES</div></div>` +
     `<div class="item__time">
     <div class="item__num">${seconds}</div><div class="item__text">SECONDS</div></div>`;
-    
+
     //+ hours + minutes + seconds;
-    
-    // If the count down is over, write some text 
+
+    // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
@@ -104,3 +104,14 @@ $( ".DxSale" ).mouseout(function() {
     $( ".step7" ).show();
     console.log("2")
 });
+
+
+$(".popupOpen").click(function (e){
+    e.preventDefault()
+    $( ".popup" ).fadeIn().css("display", "flex");
+    $('body').css('overflow', 'hidden');
+})
+$(".popup__btn").click(function (){
+    $( ".popup" ).fadeOut();
+    $('html, body').css('overflow', 'visible');
+})

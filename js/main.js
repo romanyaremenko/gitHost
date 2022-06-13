@@ -7,14 +7,14 @@ menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('active')
 })
 
-// adaptiv-foto 
+// adaptiv-foto
 function ibg(){
     let ibg = document.querySelectorAll('.ibg');
     for (var i = 0; i < ibg.length; i++) {
         if (ibg[i].querySelector('img')) {
             ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
         }
-    }   
+    }
 }
 
 ibg();
@@ -113,7 +113,7 @@ function swapCards(direction) {
     currentCardEl.classList.add("previous--card");
     previousCardEl.classList.add("next--card");
     nextCardEl.classList.add("current--card");
-    
+
 
   } else if (direction === "left") {
     previousCardEl.style.zIndex = "30";
@@ -137,21 +137,21 @@ function swapCards2(direction) {
     currentCardEl2.classList.remove("current--card2");
     previousCardEl2.classList.remove("previous--card2");
     nextCardEl2.classList.remove("next--card2");
-  
+
     currentCardEl2.style.zIndex = "50";
-  
+
     if (direction === "right") {
       previousCardEl2.style.zIndex = "20";
       nextCardEl2.style.zIndex = "30";
-  
+
       currentCardEl2.classList.add("previous--card2");
       previousCardEl2.classList.add("next--card2");
       nextCardEl2.classList.add("current--card2");
-  
+
     } else if (direction === "left") {
       previousCardEl2.style.zIndex = "30";
       nextCardEl2.style.zIndex = "20";
-  
+
       currentCardEl2.classList.add("next--card2");
       previousCardEl2.classList.add("current--card2");
       nextCardEl2.classList.add("previous--card2");
@@ -166,7 +166,7 @@ function init() {
   tl.to(cardsContainerEl.children, {
     //delay: 0.15,
     //duration: 0.5,
-    
+
     "--card-translateY-offset": "0%",
   })
     .to(
@@ -181,7 +181,7 @@ function init() {
   tl.to(cardsContainerEl2.children, {
       //delay: 0.15,
       //duration: 0.5,
-    
+
     "--card-translateY-offset": "0%",
     })
     .to(
@@ -200,11 +200,11 @@ const waitForImages = () => {
     "--card-translateY-offset": "100vh",
   });
 
-  
+
   gsap.set(cardsContainerEl2.children, {
     "--card-translateY-offset": "100vh",
   });
-  
+
   gsap.set([buttons.prev, buttons.next], {
     pointerEvents: "none",
     //opacity: "0",
@@ -213,7 +213,7 @@ const waitForImages = () => {
     pointerEvents: "none",
     //opacity: "0",
   });
-  
+
   init();
 
 };
@@ -300,4 +300,13 @@ menuButton.classList.remove('active')
 header.removeClass('out');
 }
 scrollPrev = scrolled;
+});
+
+
+var $page = $('html, body');
+$('a[href^="#"]').click(function() {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 1000);
+  return false;
 });

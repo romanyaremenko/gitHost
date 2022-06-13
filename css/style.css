@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 950px;
+  min-height: 900px;
 }
 @media (max-width: 1500px) {
   .header {
@@ -612,15 +612,6 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo-png img {
   width: 95px;
   height: 95px;
-  /*@media (max-width: 853px) {
-    width: 113px;
-    height: 113px;
-  }
-  @media (max-width: 580px) {
-    width: 100px;
-    height: 100px;
-  }
-  */
 }
 @media (max-width: 550px) {
   .header__logo-png img {
@@ -905,6 +896,7 @@ h1, h2, h3, h4, h5, h6 {
 .content__text {
   color: #FFFF82;
   padding-bottom: 25px;
+  line-height: 50px;
 }
 
 /* Set the font, lean the board, position it */
@@ -1250,7 +1242,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 .secret__column-object img {
-  max-width: 130px;
+  max-width: 140px;
   max-height: 140px;
   width: 100%;
 }
@@ -2566,6 +2558,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
   }
 }
+.soon .container {
+  height: 100%;
+  overflow: visible;
+}
+.soon__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .soon__top {
   background-image: url(../img/icons/soon/01.svg);
   background-position: left center;
@@ -2595,12 +2596,6 @@ h1, h2, h3, h4, h5, h6 {
 .soon__bottom {
   max-width: 920px;
   margin: -35px auto 0 auto;
-  /*@media (max-width: 1024px) {
-    margin: 30px auto 0 auto;
-  }*/
-  /*@media (max-width: 374px) {
-    margin: 120px auto 0 auto;
-  }*/
 }
 @media (max-width: 768px) {
   .soon__bottom {
@@ -2612,12 +2607,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .soon__bottom-item:first-child {
   margin-bottom: 50px;
-  /*@media (max-width: 1024px) {
-    margin-bottom: 84px;  
-  }*/
-  /*@media (max-width: 768px) {
-    margin-bottom: 80px;  
-  }*/
 }
 @media (max-width: 375px) {
   .soon__bottom-item:first-child {
@@ -2626,12 +2615,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .soon__bottom-item:nth-child(2) {
   margin-bottom: 40px;
-  /*@media (max-width: 1024px) {
-    margin-bottom: 95px;  
-  }*/
-  /*@media (max-width: 768px) {
-    margin-bottom: 70px;  
-  }*/
 }
 @media (max-width: 375px) {
   .soon__bottom-item:nth-child(2) {
@@ -2648,14 +2631,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 142px;
   height: 160px;
   margin-bottom: -5px;
-  /*@media (max-width: 1024px) {
-    width: 252px;
-    height: 252px;
-  }*/
-  /*@media (max-width: 768px) {
-    width: 198px;
-    height: 198px;
-  }*/
 }
 .soon__bottom-logo span {
   display: block;
@@ -2911,12 +2886,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   max-width: 870px;
   margin: 40px auto 0 auto;
-  /*@media (max-width: 1024px) {
-    margin: 95px auto 0 auto;
-  }*/
-  /*@media (max-width: 768px) {
-    margin: 70px auto 0 auto;
-  }*/
 }
 @media (max-width: 610px) {
   .soon .item {
@@ -3234,7 +3203,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
 }
 .tokenomics .step__img {
-  height: 803px;
+  height: 806px;
   width: 800px;
   object-fit: contain;
 }
