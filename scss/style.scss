@@ -4,52 +4,52 @@
 
 /* <IMPORT FONTS> ============================ */
 @font-face {
-	font-family: 'Montserrat'; 
+	font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-	src: url(../fonts/Montserrat/Montserrat-Regular.ttf); 
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
 @font-face {
-	font-family: 'Montserrat'; 
+	font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-	src: url(../fonts/Montserrat/Montserrat-Medium.ttf); 
+	src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 
 @font-face {
-	font-family: 'Montserrat'; 
+	font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-	src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf); 
+	src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
-	font-family: 'feijoa'; 
+	font-family: 'feijoa';
     font-style: normal;
     font-weight: 500;
-	src: url(../fonts/test-feijoa-font/TestFeijoa-Medium.otf); 
+	src: url(../fonts/test-feijoa-font/TestFeijoa-Medium.otf);
 }
 
 @font-face {
-	font-family: 'bebas_kai'; 
+	font-family: 'bebas_kai';
   font-style: normal;
   font-weight: 400;
-	src: url(../fonts/bebas_kai/BebasKai.ttf); 
+	src: url(../fonts/bebas_kai/BebasKai.ttf);
 }
 
 @font-face {
-	font-family: 'proxima_nova'; 
+	font-family: 'proxima_nova';
   font-style: normal;
   font-weight: 400;
-	src: url(../fonts/proxima-nova/proxima-nova-regular.ttf); 
+	src: url(../fonts/proxima-nova/proxima-nova-regular.ttf);
 }
 
 @font-face {
-	font-family: 'proxima_nova'; 
+	font-family: 'proxima_nova';
   font-style: normal;
   font-weight: 600;
-	src: url(../fonts/proxima-nova/proxima-nova-semibold.ttf); 
+	src: url(../fonts/proxima-nova/proxima-nova-semibold.ttf);
 }
 /* </IMPORT FONTS> =========================== */
 
@@ -80,7 +80,7 @@ $smb: 479.98px;
   }
   @media (max-width: 1180px) {
     max-width: 1075px;
-    
+
   }
   @media (max-width: 728px) {
     max-width: 705px;
@@ -125,8 +125,8 @@ $smb: 479.98px;
   width: 100%;
   height: 2px;
   background: radial-gradient(47.56% 95.12% at 50% 100%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
-  
-  
+
+
   &.f_l {
     background: radial-gradient(43.06% 118.57% at 100% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%),
     radial-gradient(40.62% 111.88% at 0% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
@@ -152,7 +152,7 @@ $smb: 479.98px;
   width: 2px;
   //background: radial-gradient(13.25% 36.48% at 100% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
   background: linear-gradient(180deg, rgba(99, 255, 218, 0) 0%, #7DFFE0 45.74%, rgba(99, 255, 218, 0) 100%);
-  
+
   &.f_l {
     background: radial-gradient(43.06% 118.57% at 100% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%),
     radial-gradient(40.62% 111.88% at 0% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
@@ -180,7 +180,7 @@ $smb: 479.98px;
   width: 2px;
   //background: radial-gradient(13.25% 36.48% at 100% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
   background: linear-gradient(180deg, rgba(99, 255, 218, 0) 0%, #7DFFE0 45.74%, rgba(99, 255, 218, 0) 100%);
-  
+
   &.f_l {
     background: radial-gradient(43.06% 118.57% at 100% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%),
     radial-gradient(40.62% 111.88% at 0% 50%, #A5FFF7 0%, rgba(178, 246, 255, 0) 100%);
@@ -249,7 +249,7 @@ $smb: 479.98px;
 // </STYLE BUTTON> =====================================
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
   font-family: $fontFamily, sans-serif;
   position: relative;
 }
@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 900px; 
+  min-height: 900px;
   @media (max-width: 1500px) {
     background-position: center bottom -42px;
     background-size: cover;
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   @media (max-width: 385px) {
     background-position: 100% -8%,  50% 50px;
-    background-size: contain, cover; 
+    background-size: contain, cover;
   }
   &__bg {
     position: absolute;
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   &__top {
     //background-image: url(../img/header/header__top/Union2.svg), url(../img/header/Union.svg);
     background-position: top, center top;
-    background-size: auto 82px, auto 186px; 
+    background-size: auto 82px, auto 186px;
     background-repeat: no-repeat, no-repeat;
     //background-image: url(../img/header/header__top/Union2.svg);
     display: flex;
@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 0;
       }
       span {
-        font-family: 'feijoa'; 
+        font-family: 'feijoa';
         font-size: 14px;
         line-height: 140%;
         /* identical to box height, or 18px */
@@ -664,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: all 0.3s;
         cursor: pointer;
         margin-bottom: 10px;
-        path:nth-child(2){ 
+        path:nth-child(2){
           &:hover {
             fill: rgb(0, 0, 0, 0.5);
             box-shadow: 0px 0px 5.57692px rgba(0, 0, 0, 0.5), 0px 0px 11.1538px rgba(0, 0, 0, 0.25), inset 0px 0px 5.57692px rgba(0, 0, 0, 0.5), inset 0px 0px 11.1538px rgba(0, 0, 0, 0.25);          }
@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5, h6 {
 .content__text {
 color: #FFFF82;
 padding-bottom: 25px;
-line-height: 50px; 
+line-height: 50px;
 }
 
 /* Set the font, lean the board, position it */
@@ -761,7 +761,7 @@ line-height: 50px;
 }
 
 
-#board:after {    
+#board:after {
 position: absolute;
 content: ' ';
 bottom: 60%;
@@ -792,7 +792,7 @@ text-align: center;
 
 .mission {
   padding-bottom: 100px;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 16.69%, rgba(0, 0, 0, 0) 83.91%, #000000 100%), 
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 16.69%, rgba(0, 0, 0, 0) 83.91%, #000000 100%),
   url(../img/mission/Image.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -897,7 +897,7 @@ text-align: center;
       }
     }
     &-text {
-      font-family: 'proxima_nova'; 
+      font-family: 'proxima_nova';
       font-weight: 400;
       font-size: 20px;
       line-height: 27px;
@@ -1006,7 +1006,7 @@ text-align: center;
   &__text {
     margin-bottom: 40px;
     p {
-      font-family: 'proxima_nova'; 
+      font-family: 'proxima_nova';
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -1031,7 +1031,7 @@ text-align: center;
   }
   &__column {
     width: 250px;
-    min-height: 345px;  
+    min-height: 345px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1042,13 +1042,13 @@ text-align: center;
       align-items: flex-end;
       margin-bottom: 20px;
       img {
-        max-width: 140px;
+        max-width: 150px;
         max-height: 140px;
         width: 100%;
       }
     }
     &-subtitle {
-      font-family: 'proxima_nova'; 
+      font-family: 'proxima_nova';
       font-style: normal;
       font-weight: 600;
       color: #fff;
@@ -1104,7 +1104,7 @@ text-align: center;
       span {
         display: inline-block;
         width: 100%;
-        font-family: 'Montserrat'; 
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -1214,7 +1214,7 @@ text-align: center;
       max-width: 330px;
       width: 100%;
     }
-  } 
+  }
 }
 
 .gradiation {
@@ -1255,7 +1255,7 @@ text-align: center;
   &__item {
     flex: 1 0 50%;
     &:first-child {
-      margin-right: -175px;
+      margin-right: -150px;
     }
     @media (max-width: 1024px) {
       flex: 1 0 100%;
@@ -1369,7 +1369,7 @@ text-align: center;
       padding-bottom: 8px;
       font-size: 48px;
       line-height: 1.17;
-      text-align: center; 
+      text-align: center;
       @media (max-width: 480px) {
         font-size: 37px;
       }
@@ -1467,7 +1467,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     margin: 0 auto 16px auto;
-    position: relative; 
+    position: relative;
     max-width: 400px;
     height: 130px;
     @media (max-width: 375px) {
@@ -1764,7 +1764,7 @@ text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) 
+  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
               scale(var(--card-scale-offset)) rotateY(var(--card-rotation-offset));
   transition: transform var(--card-transition-duration) var(--card-transition-easing);
   //user-select: none;
@@ -1949,7 +1949,7 @@ text-align: center;
         border-radius: 3px;
       }
     }
-    &-title { 
+    &-title {
       padding-bottom: 8px;
       position: relative;
       &::after {
@@ -2105,7 +2105,7 @@ text-align: center;
         color: #FFFFFF;
         padding: 12px 24px;
         @media (max-width: 375px) {
-          font-size: 10px; 
+          font-size: 10px;
         }
       }
     }
@@ -2234,12 +2234,10 @@ text-align: center;
   }
   .container {
     height: 100%;
-    overflow: visible;
-  }
-  &__inner {
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
   }
   &__top {
     background-image: url(../img/icons/soon/01.svg);
@@ -2248,6 +2246,9 @@ text-align: center;
     cursor: pointer;
     transition: all .5s;
     width: fit-content;
+    position: absolute;
+    top: 30px;
+    left: 30px;
     &:hover {
       transform: scale(1.1);
     }
@@ -2279,19 +2280,19 @@ text-align: center;
       &:first-child {
         margin-bottom: 50px;
         @media (max-width: 375px) {
-          margin-bottom: 34px;  
+          margin-bottom: 34px;
         }
       }
       &:nth-child(2) {
         margin-bottom: 40px;
         @media (max-width: 375px) {
-          margin-bottom: 50px;  
+          margin-bottom: 50px;
         }
       }
     }
     &-logo {
       max-width: 263px;
-      margin: 0 auto 0 auto; 
+      margin: 0 auto 0 auto;
       img {
         display: block;
         margin: 0 auto;
@@ -2301,7 +2302,7 @@ text-align: center;
       }
       span {
         display: block;
-        font-family: 'feijoa'; 
+        font-family: 'feijoa';
         font-size: 21px;
         line-height: 129%;
         /* identical to box height, or 18px */
@@ -2488,10 +2489,10 @@ text-align: center;
           display: block;
           margin: 0 auto;
           transition: all 0.3s;
-          path:nth-child(2) { 
+          path:nth-child(2) {
             &:hover {
               fill: rgb(0, 0, 0, 0.5);
-              box-shadow: 0px 0px 5.57692px rgba(0, 0, 0, 0.5), 0px 0px 11.1538px rgba(0, 0, 0, 0.25), inset 0px 0px 5.57692px rgba(0, 0, 0, 0.5), inset 0px 0px 11.1538px rgba(0, 0, 0, 0.25);          
+              box-shadow: 0px 0px 5.57692px rgba(0, 0, 0, 0.5), 0px 0px 11.1538px rgba(0, 0, 0, 0.25), inset 0px 0px 5.57692px rgba(0, 0, 0, 0.5), inset 0px 0px 11.1538px rgba(0, 0, 0, 0.25);
             }
           }
         }
@@ -2619,7 +2620,7 @@ text-align: center;
       //width: 57px;
     }
     &__text {
-      font-family: 'proxima_nova'; 
+      font-family: 'proxima_nova';
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -2837,9 +2838,24 @@ text-align: center;
     }
   }
 
+  .title {
+    min-height: 70px;
+  }
+
+  .description {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .tokenomics-text {
     min-height: 300px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: auto;
     @media (max-width: 700px) {
       min-height: 260px;
     }
@@ -2870,6 +2886,9 @@ text-align: center;
       @media (max-width: 700px) {
         height: 545px;
       }
+    }
+    .tokenomics-absolute {
+      top: 51%;
     }
   }
   .step3 {

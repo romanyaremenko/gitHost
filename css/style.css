@@ -1242,7 +1242,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 .secret__column-object img {
-  max-width: 140px;
+  max-width: 150px;
   max-height: 140px;
   width: 100%;
 }
@@ -1463,7 +1463,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 0 50%;
 }
 .gradiation__item:first-child {
-  margin-right: -175px;
+  margin-right: -150px;
 }
 @media (max-width: 1024px) {
   .gradiation__item {
@@ -2560,12 +2560,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .soon .container {
   height: 100%;
-  overflow: visible;
-}
-.soon__inner {
+  height: 100%;
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: center;
 }
 .soon__top {
   background-image: url(../img/icons/soon/01.svg);
@@ -2574,6 +2572,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   transition: all 0.5s;
   width: fit-content;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 .soon__top:hover {
   transform: scale(1.1);
@@ -3187,9 +3188,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 8px;
   }
 }
+.tokenomics .title {
+  min-height: 70px;
+}
+.tokenomics .description {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .tokenomics .tokenomics-text {
   min-height: 300px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: auto;
 }
 @media (max-width: 700px) {
   .tokenomics .tokenomics-text {
@@ -3224,6 +3238,9 @@ h1, h2, h3, h4, h5, h6 {
   .tokenomics .step2 .step__img {
     height: 545px;
   }
+}
+.tokenomics .step2 .tokenomics-absolute {
+  top: 51%;
 }
 .tokenomics .step3 {
   display: none;
