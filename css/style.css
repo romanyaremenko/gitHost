@@ -731,7 +731,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-height: 821px) {
   .side-bar {
-    height: 88vh;
+    height: calc(100vh - 45px);
     margin-top: -15px;
     top: 0;
   }
@@ -2276,7 +2276,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 610px) {
   .contract__column:nth-child(3) {
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 .contract__column:nth-child(4) {
