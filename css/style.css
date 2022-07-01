@@ -652,6 +652,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 512px) {
   .header__logo-text span {
     font-size: 12px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 375px) {
@@ -1283,6 +1284,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   flex: 0 1 45%;
 }
+@media (max-width: 680px) {
+  .secret__column-subtitle {
+    text-align: left;
+  }
+}
 .secret__column-bg {
   background-size: contain;
   background-position: top center;
@@ -1674,6 +1680,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   margin-top: -2px;
   padding: 50px 0 100px 0;
+}
+@media (max-width: 768px) {
+  .path {
+    padding: 50px 0 50px 0;
+  }
 }
 .path__box {
   padding-top: 8px;
@@ -2263,6 +2274,11 @@ h1, h2, h3, h4, h5, h6 {
 .contract__column:nth-child(3) {
   margin-bottom: 110px;
 }
+@media (max-width: 610px) {
+  .contract__column:nth-child(3) {
+    margin-top: 50px;
+  }
+}
 .contract__column:nth-child(4) {
   display: block;
   width: 100%;
@@ -2338,7 +2354,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 .contract__column-copy .copied .copy:hover {
-  background-image: url(../img/icons/contract/Copy2.svg);
+  background-image: url(../img/icons/contract/Copy2.png);
   background-size: cover;
   background-position: center;
   height: 28px;
@@ -2362,7 +2378,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 610px) {
   .contract__column-copy .copied__block {
-    background-image: url(../img/icons/contract/copy_block2.svg);
+    background-image: url(../img/icons/contract/copy_block2.png);
     left: -92%;
   }
 }
@@ -2375,10 +2391,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "proxima_nova";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 22px;
   /* identical to box height */
   color: #FFFFFF;
+}
+@media (max-width: 680px) {
+  .contract__column-copy .copied__block span {
+    font-size: 12px;
+  }
 }
 .contract__column-copy .copied__block2 {
   display: none;
@@ -2403,7 +2424,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 480px) {
   .contract__column-copy .copied__block2 {
-    background-image: url(../img/icons/contract/copy_block2.svg);
+    background-image: url(../img/icons/contract/copy_block2.png);
     left: -100%;
   }
 }
@@ -2847,7 +2868,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 610px) {
   .soon__bottom .icons__item {
     flex: 0 0 100px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 .soon__bottom .icons__item:last-child {
@@ -3086,6 +3107,11 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 16.69%, rgba(0, 0, 0, 0) 83.91%, #000000 100%), url(../img/secret/Image.png);
   padding: 100px 0;
 }
+@media (max-width: 768px) {
+  .tokenomics {
+    padding: 25px 0 50px 0;
+  }
+}
 .tokenomics .container {
   max-width: none;
   padding: 0;
@@ -3227,6 +3253,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.2em;
+}
+.tokenomics-text .info-left h3:after, .tokenomics-text .info-right h3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: linear-gradient(271.79deg, #CE65FF 0.25%, #CA529A 24.04%, #FF5B5B 70.17%, #FFA7A7 96.78%), #FFFFFF;
 }
 .tokenomics-text .info-left p, .tokenomics-text .info-right p {
   background: linear-gradient(271.79deg, rgba(206, 101, 255, 0.5) 0.25%, rgba(202, 82, 154, 0.5) 24.04%, rgba(255, 91, 91, 0.5) 70.17%, rgba(255, 167, 167, 0.5) 96.78%), #FFFFFF;
@@ -3237,12 +3276,45 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 3px;
+  letter-spacing: 0.03em;
+}
+.tokenomics-text .info-left p:last-child, .tokenomics-text .info-right p:last-child {
+  margin-top: 0px;
 }
 .tokenomics-text .info-left {
-  margin-right: 12px;
+  margin-right: 10px;
+}
+.tokenomics-text .info-left h3 {
+  background: linear-gradient(91.63deg, #65FFF9 0.28%, #72C7AA 23.47%, #65B5FF 82.6%, #727BC7 99.62%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.tokenomics-text .info-left h3:after {
+  background: linear-gradient(91.63deg, #65FFF9 0.28%, #72C7AA 23.47%, #65B5FF 82.6%, #727BC7 99.62%), #FFFFFF;
+}
+.tokenomics-text .info-left p {
+  background: linear-gradient(91.63deg, rgba(101, 255, 249, 0.5) 0.28%, rgba(114, 199, 170, 0.5) 23.47%, rgba(101, 181, 255, 0.5) 82.6%, rgba(114, 123, 199, 0.5) 99.62%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 .tokenomics-text .info-right {
-  margin-left: 12px;
+  margin-left: 9px;
+}
+.tokenomics-text .info-right h3 {
+  background: linear-gradient(271.79deg, #CE65FF 0.25%, #CA529A 24.04%, #FF5B5B 70.17%, #FFA7A7 96.78%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.tokenomics-text .info-right p {
+  background: linear-gradient(271.79deg, rgba(206, 101, 255, 0.5) 0.25%, rgba(202, 82, 154, 0.5) 24.04%, rgba(255, 91, 91, 0.5) 70.17%, rgba(255, 167, 167, 0.5) 96.78%), #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 @media (max-width: 700px) {
   .tokenomics .tokenomics-absolute {
@@ -3454,5 +3526,9 @@ h1, h2, h3, h4, h5, h6 {
 .popup__btn:hover {
   cursor: pointer;
   background: radial-gradient(100% 217.72% at 0% 100%, #4AAFB6 0%, #007A6B 100%);
+}
+
+.hidden {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

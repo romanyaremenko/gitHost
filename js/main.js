@@ -5,6 +5,9 @@ const menu = document.querySelector('.side-bar');
 menuButton.addEventListener('click', function() {
     menu.classList.toggle('active');
     menuButton.classList.toggle('active')
+  if(window.innerWidth <= 680) {
+    document.querySelector('body').classList.toggle('hidden')
+  }
 })
 
 // adaptiv-foto
