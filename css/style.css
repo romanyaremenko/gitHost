@@ -731,7 +731,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-height: 821px) {
   .side-bar {
-    height: calc(100vh - 80px);
+    height: calc(var(--vh, 1vh) * 100 - 80px);
     margin-top: -15px;
     top: 0;
   }
