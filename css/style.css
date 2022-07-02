@@ -731,7 +731,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-height: 821px) {
   .side-bar {
-    height: calc(100vh - 45px);
+    height: calc(100vh - 80px);
     margin-top: -15px;
     top: 0;
   }
@@ -2225,7 +2225,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 610px) {
   .next--image2 img, .previous--image2 img {
     width: 93px;
-    height: 84px;
+    height: 93px;
   }
 }
 @media (max-width: 375px) {
