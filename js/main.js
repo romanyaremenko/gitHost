@@ -10,6 +10,19 @@ menuButton.addEventListener('click', function() {
   }
 })
 
+
+document.querySelectorAll('.side-bar-link').forEach((item)=> {
+  item.addEventListener('click',function () {
+    if(item.classList.contains('popupOpen')) {
+    } else {
+      document.querySelector('body').classList.remove('hidden')
+      menu.classList.remove('active');
+      menuButton.classList.remove('active')
+    }
+  })
+})
+
+
 // adaptiv-foto
 function ibg(){
     let ibg = document.querySelectorAll('.ibg');
