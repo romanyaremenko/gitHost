@@ -2220,7 +2220,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .next--image2 img, .previous--image2 img {
   width: 123px;
-  height: 112px;
+  height: 123px;
 }
 @media (max-width: 610px) {
   .next--image2 img, .previous--image2 img {
